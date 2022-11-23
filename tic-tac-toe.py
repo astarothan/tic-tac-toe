@@ -23,8 +23,7 @@ def checkwin(x):
     win=0
     b=0
     for y in range(3):
-        if A[y][0] !='*':
-            if A.count(A[y][0])==3:
+        if A[y][0] !='*' and A[y][0]==A[y][1]==A[y][2]:                         
                 win=1
                 return win
     for m in range(3):
